@@ -2,6 +2,9 @@
 
 AI-powered workflow for business request classification, Text-to-SQL retrieval, and automated reporting.
 
+<img width="1577" height="821" alt="image" src="https://github.com/user-attachments/assets/8422b067-245f-4886-b4bf-a2e8466bca43" />
+
+
 ## Overview
 
 This project demonstrates how artificial intelligence can automate the processing of business requests received through email by combining workflow automation, knowledge-based classification, structured information extraction, PostgreSQL queries, and automated report generation.
