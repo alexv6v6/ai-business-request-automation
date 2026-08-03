@@ -124,4 +124,21 @@ It is the modeling approach.
 
 The workflow demonstrates how organizational knowledge, business rules, and information structures can be transformed into systems that are easier to automate, maintain, and evolve.
 
+------------------
+Repository Notice
+
+The workflow included in this repository is a sanitized reference implementation.
+
+All organization-specific information has been removed, including:
+
+database schemas,
+table names,
+SQL queries,
+credentials,
+email addresses,
+workflow identifiers,
+and institutional business processes.
+
+The purpose of the repository is to demonstrate the architecture, business modeling approach, and AI-assisted workflow design, not to reproduce any production implementation.
+
 This project represents a practical example of **AI-enabled business systems design**, where technology serves a clearly modeled business process rather than replacing business understanding.
