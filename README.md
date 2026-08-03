@@ -85,9 +85,15 @@ Converts natural language requests into parameterized SQL queries using a contro
 
 Separates business knowledge from implementation logic through a catalog-based architecture.
 
-### Automated Reporting
+## Human-in-the-loop validation
 
-Generates structured Excel reports and standardized responses automatically.
+A critical design principle of this architecture is that AI-generated responses are not sent directly to external users.
+
+The workflow generates a draft response with the corresponding report attached and routes it for human validation before final delivery.
+
+This provides: quality assurance,regulatory control,business validation,exception handling,and accountability.
+
+The human reviewer remains responsible for the final communication, while AI accelerates information retrieval and response preparation.
 
 ## Technologies
 
