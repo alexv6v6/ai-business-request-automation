@@ -4,53 +4,87 @@ AI-powered workflow for business request classification, Text-to-SQL retrieval, 
 
 ## Overview
 
-Organizations often receive a large volume of operational and business requests through email. Processing these requests manually requires reading the message, identifying the request type, retrieving information from enterprise databases, generating reports, and responding to the requester.
+This project demonstrates how artificial intelligence can automate the processing of business requests received through email by combining workflow automation, knowledge-based classification, structured information extraction, PostgreSQL queries, and automated report generation.
 
-This project demonstrates an AI-powered automation workflow that transforms unstructured email requests into structured business actions.
+The objective is not simply to automate email processing, but to transform unstructured organizational requests into executable business workflows driven by business rules and information models.
 
-The system combines workflow automation, natural language understanding, SQL generation, and automated reporting to reduce manual processing time while improving consistency and traceability.
+The architecture combines AI-assisted classification, parameter extraction, SQL generation, and automated reporting within a single workflow orchestration process.
 
-## The Problem
+## The Business Problem
 
-Business requests typically arrive in natural language.
+Organizations frequently receive operational requests through email.
 
-Examples include:
+Typical requests require:
 
-* requests for operational reports;
-* requests filtered by year or region;
-* requests for business process information;
-* requests requiring structured data extraction.
+* understanding the business context;
+* identifying the request category;
+* extracting relevant parameters;
+* retrieving information from enterprise databases;
+* generating reports;
+* responding consistently to users.
 
-Traditionally, these requests require manual interpretation and database querying.
+Manual processing is time-consuming and difficult to standardize.
 
 ## The Solution
 
-The workflow automatically:
+The workflow automatically performs the following process:
 
 1. Receives incoming emails.
-2. Extracts the relevant request content.
-3. Identifies the business request category using AI.
-4. Extracts structured parameters (such as year and region).
+2. Cleans and extracts the relevant request content.
+3. Classifies the request using a Large Language Model.
+4. Extracts structured business parameters.
 5. Maps the request to a predefined business catalog.
 6. Generates parameterized SQL queries.
-7. Retrieves data from PostgreSQL.
+7. Retrieves information from PostgreSQL.
 8. Generates an Excel report.
-9. Sends an automated response with the requested information.
+9. Sends an automated response.
 
-## System Architecture
+## Workflow Architecture
 
-Email → AI Classification → Business Catalog → SQL Generation → PostgreSQL → Excel Report → Email Response
+Incoming Email
+│
+▼
+Content Extraction
+│
+▼
+AI Classification
+│
+▼
+Business Catalog
+│
+▼
+Text-to-SQL Generation
+│
+▼
+PostgreSQL Query
+│
+▼
+Excel Report Generation
+│
+▼
+Automated Email Response
 
-## Key Capabilities
+## Key Features
 
-* AI-powered request classification
-* Text-to-SQL
-* Business rules automation
-* PostgreSQL integration
-* Workflow orchestration with n8n
-* Automated Excel reporting
-* Email response automation
-* Knowledge-based business catalog
+### Business Process Automation
+
+Automates the complete lifecycle of structured business requests.
+
+### AI-Based Classification
+
+Uses natural language understanding to identify request categories and extract relevant business parameters.
+
+### Text-to-SQL
+
+Converts natural language requests into parameterized SQL queries using a controlled business catalog.
+
+### Knowledge-Driven Design
+
+Separates business knowledge from implementation logic through a catalog-based architecture.
+
+### Automated Reporting
+
+Generates structured Excel reports and standardized responses automatically.
 
 ## Technologies
 
@@ -59,23 +93,35 @@ Email → AI Classification → Business Catalog → SQL Generation → PostgreS
 * SQL
 * Groq LLM
 * AI Information Extraction
-* Text-to-SQL
 * Workflow Automation
+* Text-to-SQL
+* Business Process Modeling
 
-## Architecture
+## Design Principles
 
-See the `architecture/` folder for the complete workflow and system diagrams.
+This project follows several architectural principles:
 
-## Documentation
+* explicit business rules;
+* structured knowledge representation;
+* controlled AI decision boundaries;
+* parameterized SQL generation;
+* workflow transparency;
+* separation between knowledge and execution.
 
-* `docs/business-rules.md`
-* `docs/text-to-sql-design.md`
-* `docs/workflow-explanation.md`
+## Repository Structure
 
-## Design Philosophy
+* **architecture/**: system and workflow diagrams
+* **n8n/**: sanitized workflow definition
+* **docs/**: architecture and business design documentation
+* **sql/**: sample business catalog structure
+* **screenshots/**: workflow illustrations
 
-This project is not primarily about AI.
+## Why This Project Matters
 
-It is about transforming organizational knowledge into executable systems.
+The most valuable aspect of this project is not the workflow itself.
 
-The workflow demonstrates how business rules, process knowledge, and structured information can be modeled in a way that allows AI systems to automate operational tasks while preserving business consistency and governance.
+It is the modeling approach.
+
+The workflow demonstrates how organizational knowledge, business rules, and information structures can be transformed into systems that are easier to automate, maintain, and evolve.
+
+This project represents a practical example of **AI-enabled business systems design**, where technology serves a clearly modeled business process rather than replacing business understanding.
