@@ -48,32 +48,53 @@ Associates each business category with validated data retrieval logic.
 
 This separation allows AI to interpret language while the organization retains control over business behavior.
 
-## Catalog structure
+Catalog structure
 
-Each catalog entry represents a business capability.
+Each catalog entry represents a business capability and acts as a formal definition of how a specific type of request should be interpreted and executed.
 
-Field	Example
-Request Type	Annual operational report
-Business Category	Operational analytics
-Required Parameters	Year, region
-SQL Template	Parameterized query
-Output	Excel report
+A catalog entry contains five essential components.
 
-## Example catalog entry
+Request type
 
-The following example illustrates the concept.
+Defines the standardized business category used by the system. This allows different natural language expressions to be normalized into a single operational concept.
 
-Field	Purpose
-Request Type	Standardized business category
-Description	Business definition
-Required Parameters	Structured inputs required for execution
-SQL Template	Approved data retrieval logic
-Output Type	Expected business result
-Validation Rules	Business constraints and execution requirements
+Business definition
 
-The AI model identifies the request category and extracts the parameters.
+Describes the organizational meaning of the request and clarifies the business context that the category represents.
 
-The catalog determines how the request should be executed.
+Required parameters
+
+Specifies the structured information needed for execution, such as year, region, process type, or other business attributes extracted from the request.
+
+SQL template
+
+Contains the approved parameterized query associated with the business category. The SQL implementation is controlled by the catalog rather than generated freely by the AI model.
+
+Output definition
+
+Defines the expected result of the request, including report format, analytical scope, and delivery method.
+
+Example catalog entry
+
+The following example illustrates how a request is represented inside the catalog.
+
+Request Type
+Annual operational report
+
+Business Category
+Operational analytics
+
+Required Parameters
+Year
+Region
+
+SQL Template
+Parameterized query
+
+Expected Output
+Excel report
+
+In this architecture, the AI model identifies the request category and extracts the required parameters, while the business catalog determines the approved execution logic and reporting behavior.
 
 ## Relationship with AI
 
