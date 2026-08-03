@@ -52,13 +52,24 @@ This separation allows AI to interpret language while the organization retains c
 
 Each catalog entry represents a business capability.
 
-<Table columnSizing="equal"><Table.Row header><Table.Cell>Field</Table.Cell><Table.Cell>Purpose</Table.Cell></Table.Row><Table.Row><Table.Cell>Request Type</Table.Cell><Table.Cell>Standardized business category</Table.Cell></Table.Row><Table.Row><Table.Cell>Description</Table.Cell><Table.Cell>Business definition</Table.Cell></Table.Row><Table.Row><Table.Cell>Required Parameters</Table.Cell><Table.Cell>Structured inputs required for execution</Table.Cell></Table.Row><Table.Row><Table.Cell>SQL Template</Table.Cell><Table.Cell>Approved data retrieval logic</Table.Cell></Table.Row><Table.Row><Table.Cell>Output Type</Table.Cell><Table.Cell>Expected business result</Table.Cell></Table.Row><Table.Row><Table.Cell>Validation Rules</Table.Cell><Table.Cell>Business constraints and execution requirements</Table.Cell></Table.Row></Table>
+Field	Example
+Request Type	Annual operational report
+Business Category	Operational analytics
+Required Parameters	Year, region
+SQL Template	Parameterized query
+Output	Excel report
 
 ## Example catalog entry
 
 The following example illustrates the concept.
 
-<Box background="surface" border={{size:1,color:"default"}} radius="3xl" padding={4} gap={2}><Row justify="between"><Text weight="semibold">Request type</Text><Text>Annual operational report</Text></Row><Divider/><Row justify="between"><Text weight="semibold">Business category</Text><Text>Operational analytics</Text></Row><Divider/><Row justify="between"><Text weight="semibold">Required parameters</Text><Text>Year, region</Text></Row><Divider/><Row justify="between"><Text weight="semibold">SQL template</Text><Text>Parameterized query</Text></Row><Divider/><Row justify="between"><Text weight="semibold">Output</Text><Text>Excel report</Text></Row></Box>
+Field	Purpose
+Request Type	Standardized business category
+Description	Business definition
+Required Parameters	Structured inputs required for execution
+SQL Template	Approved data retrieval logic
+Output Type	Expected business result
+Validation Rules	Business constraints and execution requirements
 
 The AI model identifies the request category and extracts the parameters.
 
