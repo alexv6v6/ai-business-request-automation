@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="720" fill="#ffffff"/>
+
+  <text x="60" y="50" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="bold" fill="#0f172a">
+    AI Business Request Automation Workflow
+  </text>
+
+  <text x="60" y="78" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748b">
+    Knowledge-driven business process automation using AI classification, Text-to-SQL, and PostgreSQL
+  </text>
+
+  <!-- Email -->
+
+  <rect x="60" y="130" width="170" height="70" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="95" y="160" font-family="Arial" font-size="15" font-weight="bold" fill="#0f172a">Incoming Email</text>
+  <text x="82" y="182" font-family="Arial" font-size="12" fill="#475569">Outlook trigger</text>
+
+  <!-- Extraction -->
+
+  <rect x="300" y="130" width="210" height="70" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="330" y="160" font-family="Arial" font-size="15" font-weight="bold" fill="#0f172a">Content Extraction</text>
+  <text x="322" y="182" font-family="Arial" font-size="12" fill="#475569">Cleanup and normalization</text>
+
+  <!-- AI -->
+
+  <rect x="580" y="130" width="220" height="70" rx="12" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="630" y="160" font-family="Arial" font-size="15" font-weight="bold" fill="#0f172a">AI Classification</text>
+  <text x="615" y="182" font-family="Arial" font-size="12" fill="#475569">Category and entity extraction</text>
+
+  <!-- Catalog -->
+
+  <rect x="870" y="130" width="230" height="70" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="910" y="160" font-family="Arial" font-size="15" font-weight="bold" fill="#0f172a">Business Catalog</text>
+  <text x="895" y="182" font-family="Arial" font-size="12" fill="#475569">Controlled business knowledge</text>
+
+  <!-- Arrows -->
+
+  <line x1="230" y1="165" x2="300" y2="165" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="510" y1="165" x2="580" y2="165" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="800" y1="165" x2="870" y2="165" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Down arrow -->
+
+  <line x1="985" y1="200" x2="985" y2="255" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- SQL -->
+
+  <rect x="830" y="270" width="310" height="90" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="900" y="300" font-family="Arial" font-size="15" font-weight="bold" fill="#0f172a">Text-to-SQL Engine</text>
+  <text x="855" y="322" font-family="Arial" font-size="12" fill="#475569">Parameterized SQL generation</text>
+  <text x="855" y="340" font-family="Arial" font-size="12" fill="#475569">Business rule validation</text>
+
+  <!-- PostgreSQL -->
+
+  <rect x="830" y="420" width="310" height="90" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="930" y="450" font-family="Arial" font-size="15" font-weight="bold" fill="#0f172a">PostgreSQL</text>
+  <text x="885" y="472" font-family="Arial" font-size="12" fill="#475569">Catalog queries and data retrieval</text>
+  <text x="885" y="490" font-family="Arial" font-size="12" fill="#475569">Structured analytical datasets</text>
+
+  <line x1="985" y1="360" x2="985" y2="420" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Reporting -->
+
+  <rect x="300" y="560" width="250" height="90" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="360" y="590" font-family="Arial" font-size="15" font-weight="bold" fill="#0f172a">Excel Reporting</text>
+  <text x="335" y="612" font-family="Arial" font-size="12" fill="#475569">Automated report generation</text>
+  <text x="335" y="630" font-family="Arial" font-size="12" fill="#475569">Business-ready outputs</text>
+
+  <!-- Response -->
+
+  <rect x="650" y="560" width="320" height="90" rx="12" fill="#ecfdf5" stroke="#86efac" stroke-width="1.5"/>
+  <text x="720" y="590" font-family="Arial" font-size="15" font-weight="bold" fill="#0f172a">Automated Response</text>
+  <text x="685" y="612" font-family="Arial" font-size="12" fill="#475569">Standardized business response</text>
+  <text x="685" y="630" font-family="Arial" font-size="12" fill="#475569">Report attachment and delivery</text>
+
+  <!-- Upstream arrows -->
+
+  <line x1="830" y1="465" x2="550" y2="605" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="550" y1="605" x2="650" y2="605" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Principle box -->
+
+  <rect x="60" y="270" width="640" height="200" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <text x="90" y="305" font-family="Arial" font-size="18" font-weight="bold" fill="#0f172a">
+    Core architectural principle
+  </text>
+
+  <text x="90" y="340" font-family="Arial" font-size="14" fill="#334155">
+    AI interprets the request.
+  </text>
+  <text x="90" y="365" font-family="Arial" font-size="14" fill="#334155">
+    The business catalog controls the business logic.
+  </text>
+  <text x="90" y="390" font-family="Arial" font-size="14" fill="#334155">
+    Parameterized SQL executes approved business rules.
+  </text>
+  <text x="90" y="415" font-family="Arial" font-size="14" fill="#334155">
+    Automation orchestrates the workflow.
+  </text>
+
+  <line x1="90" y1="435" x2="650" y2="435" stroke="#e2e8f0" stroke-width="1"/>
+
+  <text x="90" y="460" font-family="Arial" font-size="13" fill="#64748b">
+    Knowledge → Information Model → Business Rules → SQL → Automation
+  </text>
+
+  <!-- Footer -->
+
+  <text x="60" y="690" font-family="Arial" font-size="12" fill="#64748b">
+    Business Systems Design • Knowledge Architecture • AI-Assisted Automation
+  </text>
+</svg>
