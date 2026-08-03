@@ -1,4 +1,4 @@
-# AI Business Request Automation
+# Knowledge-Driven Business Request Automation
 
 AI-powered workflow for business request classification, Text-to-SQL retrieval, and automated reporting.
 
