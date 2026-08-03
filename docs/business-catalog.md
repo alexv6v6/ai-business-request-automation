@@ -48,33 +48,33 @@ Associates each business category with validated data retrieval logic.
 
 This separation allows AI to interpret language while the organization retains control over business behavior.
 
-Catalog structure
+## Catalog structure
 
 Each catalog entry represents a business capability and acts as a formal definition of how a specific type of request should be interpreted and executed.
 
 A catalog entry contains five essential components.
 
-Request type
+#### Request type
 
 Defines the standardized business category used by the system. This allows different natural language expressions to be normalized into a single operational concept.
 
-Business definition
+#### Business definition
 
 Describes the organizational meaning of the request and clarifies the business context that the category represents.
 
-Required parameters
+#### Required parameters
 
 Specifies the structured information needed for execution, such as year, region, process type, or other business attributes extracted from the request.
 
-SQL template
+#### SQL template
 
 Contains the approved parameterized query associated with the business category. The SQL implementation is controlled by the catalog rather than generated freely by the AI model.
 
-Output definition
+#### Output definition
 
 Defines the expected result of the request, including report format, analytical scope, and delivery method.
 
-Example catalog entry
+## Example catalog entry
 
 The following example illustrates how a request is represented inside the catalog.
 
