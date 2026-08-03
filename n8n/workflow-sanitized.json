@@ -1,0 +1,43 @@
+{
+"name": "AI Business Request Automation (Sanitized)",
+"description": "Example workflow for AI-assisted business request processing and Text-to-SQL automation.",
+"nodes": [
+{
+"name": "Email Trigger",
+"type": "email.trigger"
+},
+{
+"name": "Extract Request Content",
+"type": "text.processing"
+},
+{
+"name": "Load Business Catalog",
+"type": "database.query",
+"query": "SELECT request_type, description, sql_template FROM business_request_catalog;"
+},
+{
+"name": "AI Request Classifier",
+"type": "llm.classification"
+},
+{
+"name": "Build Parameterized Query",
+"type": "code"
+},
+{
+"name": "Execute Business Query",
+"type": "database.query"
+},
+{
+"name": "Generate Excel Report",
+"type": "report.excel"
+},
+{
+"name": "Draft Business Response",
+"type": "llm.response"
+},
+{
+"name": "Send Email Response",
+"type": "email.send"
+}
+]
+}
